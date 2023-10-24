@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    @apply bg-gray-950
+}
+
+/*Menu Modal*/
+
+.menu-opts div{
+    @apply bg-gray-800 py-2 px-2 rounded-lg cursor-pointer hover:bg-gray-700 duration-100
+}
+.menu-opts div:not(:first-child){
+    @apply bg-gray-800 py-4 px-2 rounded-lg cursor-pointer hover:bg-gray-700 duration-100
+}
+
+/*Scores' List*/
+
+.scores_list li:not(:last-child){
+    @apply border-b border-gray-800 py-3
+}
+
+.scores_list li:last-child{
+    @apply py-3
+}
+
+.tooltip{
+    @apply  after:absolute after:text-sm after:bg-gray-900 after:px-2;
+    @apply relative after:rounded after:bg-opacity-90 after:text-opacity-10 after:top-12 cursor-pointer;
+    @apply font-semibold after:text-white
+}
