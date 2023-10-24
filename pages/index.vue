@@ -1,7 +1,7 @@
 <!--                                                         GOD                                                                                 -->
 <template>
 
-<div class="text-white text-2xl  flex flex-col mx-auto w-[30em] justify-center items-center gap-2 py-10">
+<div class="text-white text-2xl  flex flex-col mx-auto w-screen px-3 md:px-0 md:w-[30em] justify-center items-center gap-2 py-10">
     <answer-modall v-show="answerModal" :answer="originalWord" @close="answerModal=false"/>
     <menu-modal v-show="onMenu" @answer="showAnswer"  @close="onMenu = false" />
     <confirmation-modal v-show="confirmation" @confirmed="terminateRound"/>
@@ -35,7 +35,7 @@
 <span class="text-[1rem] text-center max-w-[34em]">Hint : {{ hint }}</span>
 </div>
 
-<input v-model="inputWord" type="text" :class="isWrong ? 'border-2 border-red-600' : isRight ? 'border-2 border-green-600':''" class="bg-gray-800 outline-none rounded text-white px-3 py-1 text-lg w-[14em] h">
+<input v-model="inputWord" type="text" :class="isWrong ? 'border-2 border-red-600' : isRight ? 'border-2 border-green-600':''" class="bg-gray-800 lowercase outline-none rounded text-white px-3 py-1 text-lg w-[14em] h">
 
 </div>
 

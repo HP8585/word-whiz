@@ -1,5 +1,5 @@
 <template>
-<div class="mx-auto w-[30em] py-10 text-white">
+<div class="mx-auto w-screen px-3 md:px-0 md:w-[30em] py-10 text-white">
     
     <div class="flex flex-row-revers w-full justify-between font-bold items-center mb-10 border-b border-gray-700 pb-2">
         <div class="tooltip hover:after:content-['Exit']" @click="navigateTo('/')"><img src="../assets/door3.webp" class="bg-gray-700 w-8" /></div>
